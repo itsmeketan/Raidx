@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/* Add your original HTML <style> body styling here */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+  padding-top: 90px !important;
+}
+
+/* Copy ALL your effects exactly */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #f97316 !important;
+}
+
+.nav-link {
+  color: #f1f5f9 !important;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f97316 !important;
+}
+
+/* Buttons */
+.btn-orange {
+  background-color: #f97316;
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 0 15px #f9731690;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #ea580c;
+  transform: scale(1.05);
+}
+
+.btn-outline-light {
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: url('https://cdn.pixabay.com/photo/2022/01/15/05/45/silhouette-6939270_1280.png') no-repeat center bottom;
+  background-size: contain;
+}
+
+/* Info boxes */
+.info-box {
+  background-color: #1e293b;
+  padding: 50px 30px;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+}
+
+/* Highlight boxes */
+.highlight {
+  padding: 15px;
+  background-color: #334155;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e2e8f0;
+}
+
+/* Floating Background Circles */
+.floating-bg {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 122, 0, 0.3), transparent);
+  animation: floatAnim 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+.circle1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 5%;
+}
+
+.circle2 {
+  width: 250px;
+  height: 250px;
+  bottom: 10%;
+  right: 5%;
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 60px;
+}
